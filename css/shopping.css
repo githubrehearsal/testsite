@@ -1,0 +1,540 @@
+/*---購物頁面共用 - 頁面標題---*/
+.shopping-area-title{
+    margin-bottom:2.5%;
+    display: flex;
+    align-items: center;
+}
+/*---購物頁面共用 - 結帳流程標示圖---*/
+.shopping-area-title span{
+    margin-left:auto;
+}
+.shopping-area-step{
+    margin: 0 auto;
+    margin-bottom:5%;
+    width: 80%;
+    display: flex;
+    position: relative;
+}
+.shopping-area-step:after{
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 7.5px;
+    left: 0;
+    margin: auto;
+    z-index: -9;
+}
+.shopping-area-step > div{
+    margin:0 auto;
+}
+.shopping-area-step > div  p{
+    color: rgb(200, 200, 200);
+}
+.shopping-area-step > div  span{
+    margin:0 auto;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(200, 200, 200);
+    display: block;
+}
+.shopping-area-step > div  p.step-active-text{
+    color: rgb(72, 99, 173);
+}
+.shopping-area-step > div  span.step-active-dot{
+    background-color: rgb(72, 99, 173);
+    border: 1px solid rgb(72, 99, 173);
+    position: relative;
+}
+.shopping-area-step > div  span.step-active-dot:after{
+    content: '';
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+/*---選擇付款頁面---*/
+/*區塊標題*/
+.shopping-area-payment-content-title{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.shopping-area-payment-content-title h4{
+    margin: 0;
+    margin-right: auto;
+    padding: 10px 2.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 29, 64);
+}
+.shopping-area-payment-content-title span{
+    color: rgb(150, 150, 150);
+    margin-left: auto;
+}
+/*區塊內容*/
+.shopping-area-payment-content{
+    margin: 3.5% 0;
+}
+.shopping-area-payment-content-section{
+    padding: 1.5%;
+    background-color: rgb(240, 240, 240);
+}
+/*輸入欄位組件(桌機 & 平板)*/
+.shopping-area-payment-content-section > span{
+    margin-right: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+.shopping-area-payment-content-section > label > input[type=radio]{
+    margin-right: 0.5rem;
+}
+.shopping-area-payment-content-section > label > input[type=text]{
+    padding: 10px 20px;
+    margin-left: 0.5rem;
+    border: none;
+}
+.shopping-area-payment-content-section > label > span{
+    margin-right: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+/*輸入欄位組件(手機)*/
+.shopping-area-payment-content-section > label > div > input[type=radio], .shopping-area-payment-content-section > label > div > label > input[type=radio]{
+    margin-right: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+.shopping-area-payment-content-section > label > div > input[type=text], .shopping-area-payment-content-section > label > div > label > input[type=text]{
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+.shopping-area-payment-content-section > label > div > span, .shopping-area-payment-content-section > label > div > label > span{
+    color: rgb(0, 0, 0);
+}
+/*流程提示字元*/
+.alert-information{
+    margin-top: 1rem;
+}
+/*結帳信箱*/
+.information-mail-content{
+    display: flex;
+}
+.mail-content input{
+    padding: 10px 20px;
+    min-width: 300px;
+    border: none;
+}
+.gmail-content{
+    margin-left:1rem;
+    display: flex;
+    align-items: center;
+}
+.gmail-content button{
+    padding: 10px 20px;
+    margin-left: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(241, 108, 93);
+}
+.gmail-content span{
+    margin-left: 1rem;
+    color: rgb(150, 150, 150);
+    white-space: nowrap;
+}
+/*商品資訊*/
+.information-product p{
+    margin: 0;
+}
+/*付款方式*/
+.payment-method{
+    display: flex;
+}
+.payment-method label{
+    margin-right: 2.5%;
+    align-items: center;
+    display: flex;
+}
+.payment-method label img{
+    height: 50px;
+    margin-left: 0.5rem;
+}
+/*優惠券*/
+.information-coupon label{
+    display: flex;
+    align-items: center;
+}
+/*發票資訊(桌機 & 平板)*/
+.information-invoice-l{
+    display: flex;
+}
+.information-invoice-l label{
+    margin-right: 2.5%;
+    display: flex;
+    align-items: center;
+}
+/*二聯式內容(桌機 & 平板)*/
+.double-invoice-l{
+    display: flex;
+    align-items: center;
+}
+.double-invoice-l label{
+    margin-right: 2.5%;
+    display: flex;
+    align-items: center;
+}
+/*三聯式內容(桌機 & 平板)*/
+.triple-invoice-l{
+    display: flex;
+    align-items: center;
+}
+.triple-invoice-l label{
+    margin-right: 2.5%;
+    display: flex;
+    align-items: center;
+}
+/*捐贈發票內容(桌機 & 平板)*/
+.donate-invoice-l{
+    display: flex;
+}
+.donate-invoice-l label{
+    margin-right: 2.5%;
+    display: flex;
+    align-items: center;
+}
+/*發票資訊(手機)*/
+.information-invoice-m{
+    display: none;
+    flex-direction: column;
+}
+.information-invoice-m > label{
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+.information-invoice-m label div{
+    margin: 0;
+    padding: 2.5% 0;
+    display: flex;
+    align-items: center;
+}
+.information-invoice-m label div label{
+    padding: 2.5% 0;
+}
+.information-invoice-m label:last-child{
+    border-bottom: none;
+}
+/*二聯式內容(手機)*/
+.double-invoice-m{
+    display: flex;
+    flex-direction: column;
+}
+.double-invoice-m label{
+    margin: 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.double-invoice-m label:first-child{
+    width: 100%;
+}
+.double-invoice-m label input[type=text]{
+    width: 100%;
+}
+/*三聯式內容(手機)*/
+.triple-invoice-m{
+    display: flex;
+    flex-direction: column;
+}
+.triple-invoice-m input{
+    margin: 2.5% 0;
+    width: 100%;
+}
+/*捐贈發票*/
+.donate-invoice-m{
+    display: flex;
+    flex-direction: column;
+}
+.donate-invoice-m label{
+    margin: 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.donate-invoice-m label input[type=radio]{
+    margin-right: 0.5rem;
+}
+/*下一步*/
+.shopping-area-next-step a{
+    margin-left: auto;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+/*---購物清單頁面---*/
+.shopping-area-content > div{
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+}
+.shopping-area-content > div:last-child{
+    align-items: flex-start;
+}
+.shopping-area-content > div:nth-child(3), .shopping-area-content > :last-child{
+    border: none;
+}
+.shopping-area-content > div:last-child{
+    background-color: rgb(72, 99, 173);
+}
+.shopping-area-content > div p{
+    margin-bottom: 0;
+}
+.shopping-area-content > div p:first-child{
+    margin-right: auto;
+}   
+.shopping-area-content > div p:last-child{
+    margin-left: auto;
+}
+.shopping-area-content-item{
+    display: flex;
+}
+.shopping-area-content-item-img{
+    margin-right: auto;
+    width: 32.5%;
+}
+.shopping-area-content-item-list{
+    margin-left: auto;
+    width: 62.5%;
+}
+.shopping-area-content-item-list div{
+    margin: 5% 0;
+    display: flex;
+}
+.shopping-area-content-item-list div p:last-child{
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+.shopping-area-content-other-email{
+    margin-right: auto;
+    width: 32.5%;
+}
+.shopping-area-content-other-information{
+    margin-left: auto;
+    width: 62.5%;
+}
+.shopping-area-content-other-information-list{
+    padding-bottom: 2.5%;
+    display: flex;
+}
+.shopping-area-content-other-information-list:last-child{
+    padding-bottom: 0;
+}
+.shopping-area-content-operation{
+    margin-top: 5%;
+    display: flex;
+}
+.shopping-area-content-operation a{
+    padding: 10px 0;
+    font-size: 1.25rem;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+.shopping-area-content-operation a:first-child{
+    margin-left: auto;
+    margin-right: 1.5%;
+}
+.shopping-area-content-operation a:last-child{
+    margin-left: 1.5%;
+}
+.money-type{
+    color: rgb(150, 150, 150);
+}
+/*---付款成功頁面---*/
+.shopping-area-finish{
+    padding:5%;
+    background-color: rgb(240, 240, 240);
+}
+.shopping-area-finish div:first-child{
+    margin-bottom: 10%;
+}
+.shopping-area-finish div:last-child{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+.shopping-area-finish div:last-child img{
+    width: 75px;
+    margin:0 5%;
+}
+/*---付款失敗頁面---*/
+.shopping-area-error{
+    padding:0 5%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+}
+.shopping-area-error div{
+    width: 50%;
+}
+.shopping-area-error div a{
+    margin: 5% 0;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+@media (max-width: 480px){
+    /*---購物頁面共用 - 頁面標題---*/
+    .shopping-area-title{
+        margin-bottom: 7.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shopping-area-title h4, .shopping-area-title span{
+        width: 100%;
+    }
+    /*---購物頁面共用 - 結帳流程標示圖---*/
+    .shopping-area-step{
+        margin-bottom: 15%;
+        width: 100%;
+    }
+    .main-title{
+        font-size: 2rem;
+    }
+    .other-title{
+        font-size: 1.5rem;
+    }
+    /*---選擇付款頁面---*/
+    .shopping-area-payment-content{
+        margin:0;
+        margin-bottom: 12.5%;
+    }
+    .shopping-area-payment-content-section{
+        padding: 5%;
+    }
+    .information-mail-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mail-content, .gmail-content{
+        margin:2.5% 0;
+        width: 100%;
+    }
+    .mail-content input{
+        width: 100%;
+    }
+    .gmail-content button{
+        margin: 0;
+        width: 100%;
+    }
+    .payment-method{
+        flex-wrap: wrap;
+    }
+    .payment-method label{
+        margin: 2.5% 0;
+        width: 100%;
+    }
+    .information-coupon label{
+        flex-wrap: wrap;
+    }
+    .information-coupon label input{
+        margin: 2.5% 0;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .information-coupon label span, .information-coupon label input{
+        margin: 2.5% 0;;
+    }
+    .information-invoice-l, .double-invoice-l, .triple-invoice-l, .donate-invoice-l{
+        display: none;
+    }
+    .information-invoice-m{
+        display: flex;
+    }
+    .shopping-area-next-step a{
+        padding: 15px 0;
+        font-size: 1.25rem;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    /*---購物清單頁面---*/
+    .shopping-area-content-item{
+        flex-wrap: wrap;
+    }
+    .shopping-area-content-item-img{
+        margin:5% auto;
+        width: 80%;
+    }
+    .shopping-area-content-item-list{
+        width: 100%;
+    }
+    .shopping-area-content-item-list div{
+        margin: 1.25% 0;
+    }
+    .shopping-area-content-other{
+        flex-wrap: wrap;
+    }
+    .shopping-area-content-other-email, .shopping-area-content-other-information{
+        width: 100%;
+    }
+    .shopping-area-content-other-information-list{
+        margin:5% 0;
+        padding:0;
+        flex-wrap: wrap;
+    }
+    .shopping-area-content-other-information-list p{
+        width: 100%;
+    }
+    .shopping-area-content-operation{
+        margin-top: 10%;
+    }
+    .shopping-area-content-operation a:first-child{
+        margin: 0;
+        margin-right: auto;
+        width: 47.5%;
+    }
+    .shopping-area-content-operation a:last-child{
+        margin: 0;
+        margin-left: auto;
+        width: 47.5%;
+    }
+    /*付款完成*/
+    .shopping-area-finish{
+        padding: 0;
+        background: none;
+    }
+    .shopping-area-finish div:last-child{
+        flex-wrap: wrap;
+    }
+    .shopping-area-finish div:last-child img{
+        margin: 5% auto;
+    }
+    /*付款失敗*/
+    .shopping-area-error{
+        padding: 0;
+        background: none;
+    }
+    .shopping-area-error div:first-child{
+        width: 100%;
+    }
+    .shopping-area-error div:last-child{
+        display: none;
+    }
+}

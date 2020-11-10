@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+::selection{
+    background-color: rgb(225, 225, 225);
+    color: rgb(0, 0, 0);
+}
+*{
+    font-family: 'Noto Sans TC', sans-serif ;
+}
+.alert-color{
+    color: rgb(153, 1, 1);
+}
+.remarks-color{
+    color: rgb(85, 85, 85);
+}
+.white-text{
+    color: rgb(255, 255, 255);
+}
+.blue-bg{
+    background-color: rgb(72, 99, 173);
+}
+a.blue-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 99, 173);
+}
+a.blue-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 79, 153);
+}
+a.blue-btn-line{
+    color: rgb(72, 99, 173);
+    border: 1px solid rgb(72, 99, 173);
+}
+a.blue-btn-line:hover{
+    color: rgb(52, 79, 153);
+    border: 1px solid rgb(52, 79, 153);
+}
+/*大標題*/
+.main-title{
+    font-size: 3rem;
+}
+.other-title{
+    font-size: 2rem;
+}
+/*內文*/
+.inside-text{
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+}
+/*備註文字*/
+.other-text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}

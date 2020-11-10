@@ -1,0 +1,76 @@
+*{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+/*電腦版次選單*/
+#mainav li li a, #mainav .active li a{
+    background-color: rgb(0, 0, 0, .75);
+    border: none;
+}
+#mainav .drop{
+    padding-left: 0px;
+}
+#mainav .drop::after{
+    height: 10px;
+    top: 0px;
+    right: -10px;
+    bottom: 0px;
+    margin: auto;
+}
+#mainav li{
+    margin: 0 25px 0 0;
+}
+#mainav li li .drop::after{
+    display: none;
+}
+/*首頁步驟輪播圖*/
+.tab-pane img{
+    box-shadow: 0 5px 5px rgb(225, 225, 225);
+}
+/*主視覺*/
+.banner-title{
+    font-size: 3rem;
+}
+.banner-title-btn{
+    padding: 10px 20px;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.banner-title-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*產品介紹、規劃目標*/
+.imgover{
+    margin-bottom:10%;
+}
+#latest article .excerpt{
+    margin: 0 0 15px 0;
+    text-align: center;
+    padding-left:0;
+}
+.heading{
+    line-height: 24px;
+    margin-bottom:0;
+}
+.buy-btn{
+    font-size: 1rem;
+    padding:5px 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.buy-btn:hover{
+    font-size: 1rem;
+    padding:5px 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 102, 102);
+	background-color:#ff6666;
+}

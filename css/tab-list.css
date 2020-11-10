@@ -1,0 +1,110 @@
+/*js*/
+.tab-btn-default{
+    color: rgb(150, 150, 150) !important;
+    border-bottom: 1px solid transparent !important;
+}
+.tab-btn-active{
+    color: rgb(0, 0, 0) !important;
+    border-bottom: 1px solid rgb(0, 0, 0) !important;
+}
+/*產品頁*/
+.title{
+    padding:0 15px;
+    margin:5% 0;
+    text-align: center;
+}
+.class > h3{
+    padding:20px 0;
+    background-color: #001d40;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/*頁籤*/
+.tab-btn{
+    padding: 0;
+    margin:0 auto;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    display: flex;
+}
+.tab-btn li:first-child{
+    margin-left: auto;
+}
+.tab-btn li:last-child{
+    margin-right:auto;
+}
+.tab-btn li a{
+    padding:20px 20px;
+    font-size: 1.25rem;
+    display: block;
+    color: rgb(150, 150, 150);
+    border-bottom: 1px solid transparent;
+    transition: 0s;
+}
+.tab-btn li a:hover{
+    color: rgb(0, 0, 0);
+}
+/*課程列表*/
+.tab-list{
+    margin:5% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-list div{
+    margin:1.5% 0;
+    padding:0 1.25%;
+    width: 20%;
+}
+.tab-list div a{
+    margin:20px auto;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(150, 150, 150);
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+    text-indent: 1.5rem;
+}
+.tab-list div a::after{
+    height: 1.5rem;
+    width: 1.5rem;
+    content: '';
+    position: absolute;
+    top:0;
+    right:50%;
+    bottom:0;
+    left:0;
+    margin:auto;
+    background-image: url(../images/product/shopping-cart.svg);
+    background-repeat: no-repeat;
+}
+.tab-list div a:hover{
+    background-color: rgb(235, 235, 235);
+}
+.tab-language{
+    display: none;
+}
+
+/*RWD*/
+@media (max-width: 768px){
+    .class > h3{
+        padding-left:15px;
+        padding-right: 15px;
+        font-size: 1.25rem;
+    }
+    .tab-list div{
+        padding:0 2.5%;
+        width:33.3%;
+    }
+}
+@media (max-width: 480px){
+    .title > h2{
+        font-size: 1.25rem;
+    }
+    .tab-list div{
+        padding:0 2.5%;
+        width:50%;
+    }
+}
