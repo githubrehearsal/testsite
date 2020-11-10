@@ -30,6 +30,13 @@
 .shopping-area-step > div{
     margin:0 auto;
 }
+.shopping-area-step > div:first-child{
+    margin-left: -32px;
+    
+}
+.shopping-area-step > div:last-child{
+    margin-right: -32px;
+}
 .shopping-area-step > div  p{
     color: rgb(200, 200, 200);
 }
@@ -188,7 +195,6 @@
     align-items: center;
 }
 .double-invoice-l label{
-    margin-right: 2.5%;
     display: flex;
     align-items: center;
 }
@@ -257,7 +263,7 @@
     margin: 2.5% 0;
     width: 100%;
 }
-/*捐贈發票*/
+/*捐贈發票(手機)*/
 .donate-invoice-m{
     display: flex;
     flex-direction: column;
@@ -412,7 +418,7 @@
     /*---購物頁面共用 - 結帳流程標示圖---*/
     .shopping-area-step{
         margin-bottom: 15%;
-        width: 100%;
+        width: 85%;
     }
     .main-title{
         font-size: 2rem;
@@ -486,7 +492,10 @@
         width: 100%;
     }
     .shopping-area-content-item-list div{
-        margin: 1.25% 0;
+        margin: 5% 0;
+    }
+    div.shopping-area-content-total{
+        padding: 5% 2.5%;
     }
     .shopping-area-content-other{
         flex-wrap: wrap;
