@@ -179,6 +179,7 @@
 /*測驗表單背景*/
 .test-start{
     height: 100vh;
+    min-height: 1000px;
     position: relative;
     background-image: url(../images/question/start-bg.jpg);
     background-position: center center;
@@ -907,6 +908,9 @@
     }
 }
 @media screen and (max-width: 480px){
+    .test-start{
+        min-height: 100vh;
+    }
     .test-start-area h2{
         font-size: 2.25rem;
     }
