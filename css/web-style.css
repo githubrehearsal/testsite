@@ -29,6 +29,9 @@
 .tab-pane img{
     box-shadow: 0 5px 5px rgb(225, 225, 225);
 }
+.main-img{
+    background-image: url(../images/index/Banner.jpg);
+}
 /*主視覺*/
 .banner-title{
     font-size: 3rem;
