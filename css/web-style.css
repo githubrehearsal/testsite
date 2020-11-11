@@ -909,6 +909,16 @@
     }
 }
 @media screen and (max-width: 480px){
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-title-btn{
+        font-size: 1.5rem;
+        border-width: 2px;
+    }
+    #latest > li{
+        margin-bottom: 20%;
+    }
     .test-start, .test-content{
         min-height: 100vh;
     }
