@@ -882,11 +882,11 @@
 	color:#000000;
 	clear:both;	
 }
-.copyright-image{
+.copyright-img{
+    background-image: url(../images/copyright.jpg);
     background-size: cover;
-    background-position: left center;
-    background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 768px){
     .test-start-area h2{
         font-size: 4rem;
@@ -918,7 +918,7 @@
     #header{
         padding-top: 0px;
     }
-    #pageintro{
+    .main-img #pageintro{
         padding: 325px 0 300px 0;
     }
     .main-img{
@@ -1181,5 +1181,11 @@
     }
     .shopping-area-error div:last-child{
         display: none;
+    }
+    .service-img #pageintro{
+        padding: 100px 0;
+    }
+    .copyright-img #pageintro{
+        padding: 100px 0;
     }
 }
