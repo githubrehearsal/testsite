@@ -953,7 +953,7 @@
     }
     .test-content-area{
         height: 90%;
-        max-height: 700px;
+        max-height: 625px;
     }
     .test-content-area-question h1{
         font-size: 1.5rem;
@@ -999,7 +999,7 @@
         flex-direction: row;
     }
     .final-content-img, .final-content-level{
-        padding: 2.5% 0;
+        padding: 5% 0;
         width: 100%;
     }
     .final-content-level div:first-child{
