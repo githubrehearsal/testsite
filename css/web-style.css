@@ -78,6 +78,9 @@
 .fa, .far, .fas{
     font-family : "Font Awesome 5 Free" !important;
 }
+#introblocks figure figcaption{
+    background-color: rgb(20, 60, 165);
+}
 /*產品頁
 --------------------------------------------------------------------------------------------------------------- */
 .tab-btn-default{
@@ -909,6 +912,16 @@
     }
 }
 @media screen and (max-width: 480px){
+    #header{
+        padding-top: 0px;
+    }
+    #pageintro article, #pageintro article p{
+        margin-top: 100px;
+    }
+    .main-img{
+        background-image: url(../images/index/banner_m.jpg) !important;
+        background-size: 100%;
+    }
     .banner-title{
         font-size: 2rem;
     }
