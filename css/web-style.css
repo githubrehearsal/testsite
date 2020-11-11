@@ -1,6 +1,9 @@
 @charset "utf-8";
 /*電腦版次選單
 --------------------------------------------------------------------------------------------------------------- */
+#header #logo{
+    margin-top: 12px;
+}
 #mainav li li a, #mainav .active li a{
     background-color: rgb(0, 0, 0, .75);
     border: none;
