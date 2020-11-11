@@ -190,7 +190,7 @@
 }
 /*標題*/
 .test-start-area h2{
-    margin:1.25% 0;
+    margin-bottom: 1.25%;
     font-size: 6rem;
     text-align: center;
     color: rgb(0, 112, 171);
@@ -217,7 +217,7 @@
 }
 /*火箭圖*/
 .test-start-area > img{
-    margin:5% auto;
+    margin:7.5% auto;
     max-width: 250px;
     display: block;
 }
