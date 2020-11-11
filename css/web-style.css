@@ -41,6 +41,9 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+#introblocks .imgover{
+    margin-bottom: 0;
+}
 /*產品介紹、規劃目標*/
 .imgover{
     margin-bottom:10%;
@@ -61,7 +64,6 @@
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
 }
-
 .buy-btn:hover{
     font-size: 1rem;
     padding:5px 10px;
@@ -69,6 +71,9 @@
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 102, 102);
 	background-color:#ff6666;
+}
+.fa, .far, .fas{
+    font-family : "Font Awesome 5 Free" !important;
 }
 /*產品頁
 --------------------------------------------------------------------------------------------------------------- */
@@ -244,17 +249,19 @@
     border: 1px solid rgb(241, 108, 93);
     background-color: rgb(241, 108, 93);
 }
-/*#f16c5d*/
-.test-start-area form div:last-child button{
+/*開始評估按鈕*/
+.test-start-area form div:last-child a{
     margin: auto;
     padding: 15px 0;
     width: 100%;
     max-width: 500px;
     font-size: 1.5rem;
     letter-spacing: 4px;
+    text-align: center;
     border: 0;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 29, 64);
+    display: block;
 }
 /*測驗背景圖*/
 .test-content{
