@@ -918,12 +918,13 @@
     #header{
         padding-top: 0px;
     }
-    #pageintro article, #pageintro article p{
-        margin-top: 100px;
+    #pageintro{
+        padding: 325px 0 300px 0;
     }
     .main-img{
         background-image: url(../images/index/banner_m.jpg) !important;
-        background-size: 100%;
+        background-size: cover;
+        background-position: center center;
     }
     .banner-title{
         font-size: 2rem;
