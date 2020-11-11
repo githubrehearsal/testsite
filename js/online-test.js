@@ -121,7 +121,7 @@ $(document).ready(function () {
         $('.final-content-level').append('<div><a href=' + BuyLink + '>立刻採購</a></div>');
         $('.final-content-level').append('<div></div>');
         $('.final-content-level div').eq(1).append('<p>或是你也可以看看</p>');
-        $('.final-content-level div').eq(1).append('<a href="../products.html">其他等級</a>')
+        $('.final-content-level div').eq(1).append('<a href="products.html">其他等級</a>')
     };
     //Q1
     $('.test-content-area-submit a').on('click', function () {
@@ -191,10 +191,10 @@ $(document).ready(function () {
         var AnswersStatus4 = $('.test-content-area-answer a').eq(3).attr('data-status');
         if (AnswersStatus3 == 'on') {
             //正確N1
-            Final('N1', '評語:快跟你旁邊的人說你會日文', '<li>與日本人溝通的能力</li>', '<li>看日劇根本不需要翻譯(有時還是需要日文字幕)</li>', '<li>複雜的文章也可以了解重點</li>', 'images/question/N1-A.jpg', '../shopping-payment.html');
+            Final('N1', '評語:快跟你旁邊的人說你會日文', '<li>與日本人溝通的能力</li>', '<li>看日劇根本不需要翻譯(有時還是需要日文字幕)</li>', '<li>複雜的文章也可以了解重點</li>', 'images/question/N1-A.jpg', 'shopping-payment.html');
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
             //錯誤N2
-            Final('N2', '評語:騙人!?你根本日文系啊', '<li>大專院校日文系畢業門檻</li>', '<li>說實話這樣就可以在日本生活了</li>', '<li>能從事些與日文相關的簡單工作</li>', 'images/question/N2-A.jpg', '../shopping-payment.html');
+            Final('N2', '評語:騙人!?你根本日文系啊', '<li>大專院校日文系畢業門檻</li>', '<li>說實話這樣就可以在日本生活了</li>', '<li>能從事些與日文相關的簡單工作</li>', 'images/question/N2-A.jpg', 'shopping-payment.html');
         }
         return false;
     });
@@ -209,7 +209,7 @@ $(document).ready(function () {
             Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
             //錯誤N5
-            Final('N5', '評語:相信你再來會深深感受到自己的成長', '<li>可以分辨日文50音、平假名及片假名</li>', '<li>看到日文文章時可念出些許單字</li>', '', 'images/question/N5-A.jpg', '../shopping-payment.html');
+            Final('N5', '評語:相信你再來會深深感受到自己的成長', '<li>可以分辨日文50音、平假名及片假名</li>', '<li>看到日文文章時可念出些許單字</li>', '', 'images/question/N5-A.jpg', 'shopping-payment.html');
         }
         return false;
     });
@@ -224,7 +224,7 @@ $(document).ready(function () {
             Test(Question5, Answer5A, Answer5B, Answer5C, Answer5D, 'Q5');
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
             //錯誤N2
-            Final('N2', '評語:騙人!?你根本日文系啊', '<li>大專院校日文系畢業門檻</li>', '<li>說實話這樣就可以在日本生活了</li>', '<li>能從事些與日文相關的簡單工作</li>', 'images/question/N2-A.jpg', '../shopping-payment.html');
+            Final('N2', '評語:騙人!?你根本日文系啊', '<li>大專院校日文系畢業門檻</li>', '<li>說實話這樣就可以在日本生活了</li>', '<li>能從事些與日文相關的簡單工作</li>', 'images/question/N2-A.jpg', 'shopping-payment.html');
         }
         return false;
     });
@@ -236,7 +236,7 @@ $(document).ready(function () {
         var AnswersStatus4 = $('.test-content-area-answer a').eq(3).attr('data-status');
         if (AnswersStatus1 == 'on') {
             //正確N3
-            Final('N3', '評語:非常好，我們最愛這個等級的求學者', '<li>可以理解多數日文單字的意思</li>', '<li>能夠書寫簡單的日文文章</li>', '<li>對於日常生活所需的單字、會話有初步認知</li>', 'images/question/N3-A.jpg', '../shopping-payment.html');
+            Final('N3', '評語:非常好，我們最愛這個等級的求學者', '<li>可以理解多數日文單字的意思</li>', '<li>能夠書寫簡單的日文文章</li>', '<li>對於日常生活所需的單字、會話有初步認知</li>', 'images/question/N3-A.jpg', 'shopping-payment.html');
         } else if (AnswersStatus2 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
             //錯誤
             Test(Question3, Answer3A, Answer3B, Answer3C, Answer3D, 'Q3');
@@ -251,10 +251,10 @@ $(document).ready(function () {
         var AnswersStatus4 = $('.test-content-area-answer a').eq(3).attr('data-status');
         if (AnswersStatus2 == 'on') {
             //正確N4
-            Final('N4', '評語:知道日本發音為にほん', '<li>可以自負的說你看得懂50音</li>', '<li>能夠了解日常生活中常見的日文單字</li>', '<li>能夠聽懂日文單字並拼出其寫法</li>', 'images/question/N4-A.jpg', '../shopping-payment.html');
+            Final('N4', '評語:知道日本發音為にほん', '<li>可以自負的說你看得懂50音</li>', '<li>能夠了解日常生活中常見的日文單字</li>', '<li>能夠聽懂日文單字並拼出其寫法</li>', 'images/question/N4-A.jpg', 'shopping-payment.html');
         } else if (AnswersStatus1 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
             //錯誤N5
-            Final('N5', '評語:相信你再來會深深感受到自己的成長', '<li>可以分辨日文50音、平假名及片假名</li>', '<li>看到日文文章時可念出些許單字</li>', '', 'images/question/N5-A.jpg', '../shopping-payment.html');
+            Final('N5', '評語:相信你再來會深深感受到自己的成長', '<li>可以分辨日文50音、平假名及片假名</li>', '<li>看到日文文章時可念出些許單字</li>', '', 'images/question/N5-A.jpg', 'shopping-payment.html');
         }
         return false;
     });
@@ -266,7 +266,7 @@ $(document).ready(function () {
         var AnswersStatus4 = $('.test-content-area-answer a').eq(3).attr('data-status');
         if (AnswersStatus4 == 'on') {
             //正確N3
-            Final('N3', '評語:非常好，我們最愛這個等級的求學者', '<li>可以理解多數日文單字的意思</li>', '<li>能夠書寫簡單的日文文章</li>', '<li>對於日常生活所需的單字、會話有初步認知</li>', 'images/question/N3-A.jpg', '../shopping-payment.html');
+            Final('N3', '評語:非常好，我們最愛這個等級的求學者', '<li>可以理解多數日文單字的意思</li>', '<li>能夠書寫簡單的日文文章</li>', '<li>對於日常生活所需的單字、會話有初步認知</li>', 'images/question/N3-A.jpg', 'shopping-payment.html');
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus3 == 'on') {
             //錯誤
             Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');

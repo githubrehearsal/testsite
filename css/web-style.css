@@ -270,6 +270,7 @@
 /*測驗背景圖*/
 .test-content{
     height: 100vh;
+    min-height: 1000px;
     position: relative;
     background-image: url(../images/question/test-bg.jpg);
     background-position: center center;
@@ -278,7 +279,7 @@
 /*對話視窗*/
 .test-content-area{
     height: 80%;
-    max-height: 600px;
+    max-height: 650px;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
@@ -908,7 +909,7 @@
     }
 }
 @media screen and (max-width: 480px){
-    .test-start{
+    .test-start, .test-content{
         min-height: 100vh;
     }
     .test-start-area h2{
