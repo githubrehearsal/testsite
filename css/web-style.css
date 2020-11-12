@@ -885,8 +885,15 @@
 .copyright-img{
     background-image: url(../images/copyright.jpg);
     background-size: cover;
+    background-position: center center;
 }
-
+/* 客服頁面
+--------------------------------------------------------------------------------------------------------------- */
+.service-img{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 @media screen and (max-width: 768px){
     .test-start-area h2{
         font-size: 4rem;
@@ -1181,6 +1188,12 @@
     }
     .shopping-area-error div:last-child{
         display: none;
+    }
+    .copyright-img{
+        background-image: url(../images/copyright-m.jpg);
+    }
+    .service-img{
+        background-image: url(../images/service-m.jpg);
     }
     .service-img #pageintro{
         padding: 100px 0;
