@@ -934,6 +934,10 @@
     #latest > li{
         margin-bottom: 20%;
     }
+    #processes > .container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .step-content{
         padding:0;
     }
