@@ -78,11 +78,30 @@
     border: 1px solid rgb(255, 102, 102);
 	background-color:#ff6666;
 }
+[class*="u-nav-v8"] .nav-link .u-nav-v8__icon{
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 2px solid rgb(255, 255, 255);
+}
 .fa, .far, .fas{
+    font-size: 1.25rem;
     font-family : "Font Awesome 5 Free" !important;
 }
 #introblocks figure figcaption{
     background-color: rgb(20, 60, 165);
+}
+/*使用說明四步驟*/
+.step-content{
+    padding: 50px 0px;
+}
+.step-content h4{
+    font-size: 2rem;
+}
+.step-content h4{
+    font-size: 2rem;
+}
+.step-content p{
+    font-size: 1.25rem;
 }
 /*產品頁
 --------------------------------------------------------------------------------------------------------------- */
@@ -141,34 +160,6 @@
     margin:1.5% 0;
     padding:0 1.25%;
     width: 20%;
-}
-.tab-list div a{
-    margin:20px auto;
-    padding: 10px 20px;
-    width: 100%;
-    border: 1px solid rgb(200, 200, 200);
-    color: rgb(150, 150, 150);
-    border-radius: 20px;
-    text-align: center;
-    display: block;
-    position: relative;
-    text-indent: 1.5rem;
-}
-.tab-list div a::after{
-    height: 1.5rem;
-    width: 1.5rem;
-    content: '';
-    position: absolute;
-    top:0;
-    right:50%;
-    bottom:0;
-    left:0;
-    margin:auto;
-    background-image: url(../images/product/shopping-cart.svg);
-    background-repeat: no-repeat;
-}
-.tab-list div a:hover{
-    background-color: rgb(235, 235, 235);
 }
 .tab-language{
     display: none;
@@ -942,6 +933,9 @@
     }
     #latest > li{
         margin-bottom: 20%;
+    }
+    .step-content{
+        padding: 25px 0;
     }
     .test-start, .test-content{
         min-height: 775px;

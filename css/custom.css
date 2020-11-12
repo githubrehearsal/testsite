@@ -54,3 +54,55 @@ a.blue-btn-line:hover{
     font-size: 1rem;
     line-height: 1.5rem;
 }
+/*按鈕*/
+.btn-style{
+    margin:20px auto;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 150px;
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(150, 150, 150);
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.btn-style:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 102, 102);
+    background-color: rgb(255, 102, 102);
+}
+/*區塊隱藏*/
+.opacity-l{
+    opacity: 0;
+}
+.block-l{
+    display: block;
+}
+.none-l{
+    display: none;
+}
+/*平板共用樣式*/
+@media screen and (max-width: 768px){
+    .opacity-m{
+        opacity: 0;
+    }
+    .block-m{
+        display: block;
+    }
+    .none-m{
+        display: none;
+    }
+}
+/*手機板共用樣式*/
+@media screen and (max-width: 768px){
+    .opacity-s{
+        opacity: 0;
+    }
+    .block-s{
+        display: block;
+    }
+    .none-s{
+        display: none;
+    }
+}
