@@ -178,7 +178,7 @@
 /*測驗表單背景*/
 .test-start{
     height: 100vh;
-    min-height: 1000px;
+    min-height: 1100px;
     position: relative;
     background-image: url(../images/question/start-bg.jpg);
     background-position: center center;
@@ -225,32 +225,34 @@
     width: 60%;
     max-width: 600px;
 }
-.test-start-area form div{
-    margin: 2rem auto;
-}
 .test-start-area form div:first-child{
+    margin: 0 auto;
     width: 100%;
     max-width: 500px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 .test-start-area form div:first-child input{
+    margin-bottom: 1.5%;
     padding: 15px 20px;
     width: 100%;
-    margin-right: 1rem;
     font-size: 1.25rem;
     color: rgb(0, 112, 171);
     border:1px solid rgb(0, 112, 171);
 }
 .test-start-area form div:first-child button{
+    margin-top: 1.5%;
     padding: 15px 20px;
     width: 100%;
-    margin-left: 1rem;
     font-size: 1.25rem;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(241, 108, 93);
     background-color: rgb(241, 108, 93);
+}
+.test-start-area form div:last-child{
+    margin-top: 1rem;
 }
 /*開始評估按鈕*/
 .test-start-area form div:last-child a{
@@ -842,7 +844,7 @@
 }
 /*---付款失敗頁面---*/
 .shopping-area-error{
-    padding:0 5%;
+    padding:5%;
     background-color: rgb(240, 240, 240);
     display: flex;
     align-items: center;
@@ -857,6 +859,11 @@
     border-radius: 5px;
     display: block;
     text-align: center;
+}
+.shopping-area-error div img{
+    margin: auto;
+    width: 75%;
+    display: block;
 }
 /* 使用說明
 --------------------------------------------------------------------------------------------------------------- */
@@ -968,19 +975,8 @@
         max-width: 150px;
         display: block;
     }
-    .test-start-area form div:first-child,.test-start-area form div:last-child{
-        margin: 1rem auto;
-    }
     .test-start-area form div{
         flex-wrap: wrap;
-    }
-    .test-start-area form div:first-child input, .test-start-area form div:first-child button{
-        margin: 5px 0;
-        padding: 10px 20px;
-        width: 100%;
-    }
-    .test-start-area form div:last-child{
-        margin: 25px 0;
     }
     .test-start-area form div:last-child button{
         padding: 10px 0;

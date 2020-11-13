@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 ::selection{
     background-color: rgb(225, 225, 225);
     color: rgb(0, 0, 0);
 }
+/*思源黑體*/
 *{
     font-family: 'Noto Sans TC', sans-serif !important;
+}
+/*日文字*/
+.jp-text{
+    font-family: 'Noto Sans JP', sans-serif !important;
 }
 a{
     text-decoration: none !important;
@@ -17,6 +23,9 @@ a{
 }
 .white-text{
     color: rgb(255, 255, 255);
+}
+.text-black{
+    color: rgb(0, 0, 0);
 }
 .blue-bg{
     background-color: rgb(72, 99, 173);
@@ -36,6 +45,21 @@ a.blue-btn-line{
 a.blue-btn-line:hover{
     color: rgb(52, 79, 153);
     border: 1px solid rgb(52, 79, 153);
+}
+/*首頁用色塊分割*/
+.gray-bg{
+    background-color: #f7f7f7;
+}
+/*特別應用色*/
+.japan-color{
+    color: #fffc00;
+}
+.japan-color:hover{
+    color: #fffc00;
+}
+/*ASK-LOGO*/
+.ask-logo img{
+    width: 175px;
 }
 /*大標題*/
 .main-title{
@@ -71,6 +95,16 @@ a.blue-btn-line:hover{
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 102, 102);
     background-color: rgb(255, 102, 102);
+}
+/*文字齊左*/
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
 }
 /*區塊隱藏*/
 .opacity-l{
