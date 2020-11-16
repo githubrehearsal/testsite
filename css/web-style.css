@@ -178,7 +178,7 @@
 /*測驗表單背景*/
 .test-start{
     height: 100vh;
-    min-height: 1100px;
+    min-height: 1125px;
     position: relative;
     background-image: url(../images/question/start-bg.jpg);
     background-position: center center;
@@ -223,12 +223,11 @@
 .test-start-area form{
     margin: 0 auto;
     width: 60%;
-    max-width: 600px;
+    max-width: 500px;
 }
 .test-start-area form div:first-child{
     margin: 0 auto;
     width: 100%;
-    max-width: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,15 +250,14 @@
     border: 1px solid rgb(241, 108, 93);
     background-color: rgb(241, 108, 93);
 }
-.test-start-area form div:last-child{
+.test-start-area form div:nth-child(2){
     margin-top: 1rem;
 }
 /*開始評估按鈕*/
-.test-start-area form div:last-child a{
+.test-start-area form div:nth-child(2) a{
     margin: auto;
     padding: 15px 0;
     width: 100%;
-    max-width: 500px;
     font-size: 1.5rem;
     letter-spacing: 4px;
     text-align: center;
@@ -267,6 +265,10 @@
     color: rgb(255, 255, 255);
     background-color: rgb(0, 29, 64);
     display: block;
+}
+.test-start-area form span{
+    margin-top: 1rem;
+    display: inline-block;
 }
 /*測驗背景圖*/
 .test-content{
@@ -752,9 +754,6 @@
     background-color: rgb(240, 240, 240);
     box-sizing: border-box;
 }
-.shopping-area-content > div:last-child{
-    align-items: flex-start;
-}
 .shopping-area-content > div:nth-child(3), .shopping-area-content > :last-child{
     border: none;
 }
@@ -764,10 +763,10 @@
 .shopping-area-content > div p{
     margin-bottom: 0;
 }
-.shopping-area-content > div p:first-child{
+.shopping-area-content-information p:first-child{
     margin-right: auto;
-}   
-.shopping-area-content > div p:last-child{
+}
+.shopping-area-content-information p:last-child{
     margin-left: auto;
 }
 .shopping-area-content-item{
@@ -785,13 +784,19 @@
     margin: 5% 0;
     display: flex;
 }
+.shopping-area-content-item-list p:first-child{
+    margin-right: auto;
+}
+.shopping-area-content-item-list p:last-child{
+    margin-left: auto;
+}
 .shopping-area-content-item-list div p:last-child{
     margin-left: 1rem;
     white-space: nowrap;
 }
-.shopping-area-content-other-email{
+.shopping-area-content-total p:first-child{
+    margin-left: 37.5%;
     margin-right: auto;
-    width: 32.5%;
 }
 .shopping-area-content-other-information{
     margin-left: auto;
@@ -803,6 +808,12 @@
 }
 .shopping-area-content-other-information-list:last-child{
     padding-bottom: 0;
+}
+.shopping-area-content-other-information-list p:first-child{
+    margin-right: auto;
+}
+.shopping-area-content-other-information-list p:last-child{
+    margin-left: auto;
 }
 .shopping-area-content-operation{
     margin-top: 5%;
@@ -875,22 +886,18 @@
 
 /* 著作權
 --------------------------------------------------------------------------------------------------------------- */
-.copyright{
-	font-size:18px;
-	line-height:35px;
-	text-align:left;
-	color:#000000;
-	clear:both;	
-}
 .copyright-img{
-    background-image: url(../images/copyright.jpg);
+    background-image: url(../images/copyright/copyright.jpg);
     background-size: cover;
     background-position: center center;
+}
+.copyright-img h3, .copyright-img div{
+    text-align: left;
 }
 /* 客服頁面
 --------------------------------------------------------------------------------------------------------------- */
 .service-img{
-    background-image: url(../images/service.jpg);
+    background-image: url(../images/service/service.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -1186,10 +1193,10 @@
         display: none;
     }
     .copyright-img{
-        background-image: url(../images/copyright-m.jpg);
+        background-image: url(../images/copyright/copyright-m.jpg);
     }
     .service-img{
-        background-image: url(../images/service-m.jpg);
+        background-image: url(../images/service/service-m.jpg);
     }
     .service-img #pageintro{
         padding: 100px 0;
