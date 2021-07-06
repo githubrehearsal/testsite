@@ -901,6 +901,126 @@
     background-size: cover;
     background-position: center center;
 }
+/* QA 頁面 2021/07-06新增
+--------------------------------------------------------------------------------------------------------------- */
+.qa-img{
+    background-image: url(../images/qa/qa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.qa{
+    margin: 5% auto;
+    padding:20px 10%;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+/*頁籤*/
+.qa-tab{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.qa-tab-link{
+    display: flex;
+    margin-right: auto;
+    width: 25%;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.qa-tab-link:hover{
+    color: #cc6600;
+}
+.qa-tab-link img{
+    height: auto;
+    width: 100px;
+    min-width: 25px;
+}
+.qa-tab-link-content{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    position: relative;
+}
+.qa-tab-link-content-text{
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    top: 20px;
+    position: relative;
+}
+.qa-tab-link-content-text-active{
+    color: #cc6600;
+}
+.qa-tab-link-content-line{
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: none;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+}
+.qa-tab-link-content-line-active{
+    background-color: #cc6600
+}
+/*頁籤內容*/
+.qa-content-none{
+    display: none;
+}
+/*頁籤內容標題*/
+.qa-content-area-title{
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    background-color: rgb(225, 225, 225);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.qa-content-area-title:hover{
+    background-color: rgb(200, 200, 200);
+}
+.qa-content-area-title p{
+    margin: 0;
+    margin-right: auto;
+    font-size: 1.25rem;
+    display: flex;
+}
+.qa-content-area-title > img{
+    height: 24px;
+    width: 24px;
+    background-color: rgb(132, 177, 96);
+    display: inline-block;
+    position: relative;
+}
+/*頁籤內容內文*/
+.qa-content-area-inside{
+    padding: 20px 5%;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+.qa-content-area-inside > a{
+    color: #007bff;
+}
+.qa-content-area-inside-none{
+    display: none;
+}
+.qa-content-area-inside-block{
+    display: block;
+}
+@media screen and (max-width: 1024px){
+    .qa{
+        padding: 20px 5%;
+        width: 100%;
+    }
+}
 @media screen and (max-width: 768px){
     .test-start-area h2{
         font-size: 4rem;
@@ -926,6 +1046,16 @@
     .tab-list div{
         padding:0 2.5%;
         width:33.3%;
+    }
+    .qa-tab-link img{
+        display: none;
+    }
+    .qa-tab-link-content{
+        width: 100%;
+    }
+    .qa-tab-link-content-text{
+        padding: 20px 0;
+        top: 0;
     }
 }
 @media screen and (max-width: 480px){
@@ -1203,5 +1333,17 @@
     }
     .copyright-img #pageintro{
         padding: 100px 0;
+    }
+    .qa-tab-link img:last-child{
+        height: 24px;
+        width: 24px›;
+        display: block;
+    }
+    .qa-tab-link-content{
+        width: 100%;
+    }
+    .qa-tab-link-content-text{
+        padding: 20px 0;
+        top: 0;
     }
 }
