@@ -1018,10 +1018,24 @@
 }
 /*電腦版主選單
 ---------------------------------------------------------------------------------------------------------------*/
-#mainav .clear li a img{
-    height: 25px;
-    width: 25px;    
+.home a{
+    color: transparent !important;
+    position: relative;
 }
+.home a::after{
+    content: '';
+    height: 25px;
+    width: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    background-image: url(../images/home.svg);
+}
+/*Footer 社群媒體
+---------------------------------------------------------------------------------------------------------------*/
 .one_quarter .social-media{
     display: flex;
 }
